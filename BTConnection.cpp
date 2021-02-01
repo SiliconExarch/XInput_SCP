@@ -1,5 +1,6 @@
 #include "StdAfx.h"
 #include <intrin.h>
+#pragma warning(disable : 4996)
 
 static const SCP_DS3_ACCEL default_accel = {512, 512, 400, 512};
 

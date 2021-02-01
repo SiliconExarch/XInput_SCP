@@ -43,22 +43,22 @@ BOOL LoadApi(BOOL bEnable)
 		}
 
 		// Load SL3s
-		for (DWORD Index = 0; Index < XUSER_MAX_COUNT * CSL3Controller::CollectionSize && l_nPads < XUSER_MAX_COUNT; Index++)
-		{
-			Pad = new CSL3Controller(Index);
-
-			if (Pad->Open()) l_Pad[l_nPads++] = Pad;
-			else { delete Pad; break; }
-		}
+		//for (DWORD Index = 0; Index < XUSER_MAX_COUNT * CSL3Controller::CollectionSize && l_nPads < XUSER_MAX_COUNT; Index++)
+		//{
+		//	Pad = new CSL3Controller(Index);
+		//
+		//	if (Pad->Open()) l_Pad[l_nPads++] = Pad;
+		//	else { delete Pad; break; }
+		//}
 
 		// Load DS2s
-		for (DWORD Index = 0; Index < XUSER_MAX_COUNT * CDS2Controller::CollectionSize && l_nPads < XUSER_MAX_COUNT; Index++)
-		{
-			Pad = new CDS2Controller(Index);
-
-			if (Pad->Open()) l_Pad[l_nPads++] = Pad;
-			else delete Pad;
-		}
+		//for (DWORD Index = 0; Index < XUSER_MAX_COUNT * CDS2Controller::CollectionSize && l_nPads < XUSER_MAX_COUNT; Index++)
+		//{
+		//	Pad = new CDS2Controller(Index);
+		//
+		//	if (Pad->Open()) l_Pad[l_nPads++] = Pad;
+		//	else delete Pad;
+		//}
 		
 		// Load X360s
 		if (l_nBtPads == 0) // Only if not using BTH Server

@@ -1,4 +1,5 @@
 #include "stdafx.h"
+#pragma warning(disable : 4995)
 
 static CSCPController* l_Pad[XUSER_MAX_COUNT];
 static BOOL  l_bPassThrough = false, l_bStarted = false, l_bUnloaded = false;
